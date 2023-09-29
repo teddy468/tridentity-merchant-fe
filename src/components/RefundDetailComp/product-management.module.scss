@@ -1,0 +1,244 @@
+.wrapper {
+  position: relative;
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+    }
+    .addProductBtn {
+      width: fit-content;
+    }
+  }
+  .inputSearch {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .productPanel {
+    position: relative;
+    background: #212124;
+    border: 1px solid #64646C;
+    border-radius: 16px;
+    padding: 24px;
+    .customTab {
+      width: 128px;
+    }
+    .tabContent {
+      margin-top: 12px;
+    }
+
+    .paginationWrapper {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+  }
+
+  .refundFooter {
+    position: fixed;
+    bottom: 86px;
+    left: 366px;
+    right: 86px;
+    display: flex;
+    .btnDeclineRefund {
+      font-weight: 500;
+      font-size: 14px;
+      color: #12B76A;
+      border: 1px solid #12B76A;
+      background: transparent;
+    }
+    .btnResolve {
+      margin-left: auto;
+      background: #12B76A;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 14px;
+      border: 1px solid #12B76A;
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .productName {
+    margin-left: 8px;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  div {
+    cursor: pointer;
+    margin: 0 10px;
+
+    &.edit {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.delete {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.titleModalChooseStore {
+  font-size: 18px !important;
+}
+
+.textAvailable {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.buttonText {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #ababb1 !important;
+  }
+}
+
+.buttonGreen {
+  background: #12b76a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 36px;
+  border: none;
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+.bottomModal {
+  height: 30px;
+}
+.groupButton {
+  float: right;
+}
+
+.images {
+  display: flex;
+  max-width: 270px;
+  margin-top: 24px;
+  justify-content: space-between;
+  img {
+    width: 105px;
+    height: 60px;
+    border-radius: 16px;
+    margin-right: 20px;
+  }
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  & div:first-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ababb1;
+    margin-right: 12px;
+  }
+  .ant-picker {
+    background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%) !important;
+  }
+}
+
+.userInfo {
+  display: flex;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-image-source: linear-gradient(94.22deg, #FDCD9D 0%, #F7EF82 100%);
+  }
+}
+
+.detail {
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ababb1;
+  margin-top: 10px;
+}
+
+.feedback {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 24px;
+}

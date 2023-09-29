@@ -1,0 +1,18 @@
+.customRadio {
+  margin-bottom: 0;
+  [class*="ant-radio-wrapper"] {
+    color: #fff;
+    [class*="ant-radio-checked"] {
+      [class*="ant-radio-inner"] {
+        border-color: #f4e85b;
+        &::after {
+          background-color: #f4e85b;
+        }
+      }
+    }
+    [class*="ant-radio-inner"] {
+      border-color: #fff;
+      background-color: transparent;
+    }
+  }
+}

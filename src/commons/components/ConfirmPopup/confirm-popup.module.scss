@@ -1,0 +1,52 @@
+.confirmPopup {
+  padding: 32px 102px;
+  [class*="ant-modal-content"] {
+    width: 600px;
+  }
+  [class*="ant-modal-body"] {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    justify-content: center;
+    .cancelButton {
+      width: 184px;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #f7ef82;
+      height: 44px;
+      cursor: pointer;
+    }
+    .confirmButton {
+      width: 184px;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.group {
+  background: transparent;
+  svg {
+    path {
+      fill: #e3f1ec;
+    }
+  }
+  &.label {
+    margin-bottom: 24px;
+  }
+  [class*="ant-form-item-label"] {
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ababb1;
+      &::before {
+        position: absolute;
+        margin-inline-end: 0 !important;
+        right: -10px;
+        bottom: 1em;
+        color: #ababb1 !important;
+        font-family: inherit !important;
+      }
+    }
+  }
+  [class*="ant-form-item-explain-error"] {
+    margin-top: 10px;
+  }
+  [class*="ant-form-item-explain-warning"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.customInput {
+  border: 1px solid #7b7b84;
+  border-radius: 8px;
+  height: 44px;
+  width: 100%;
+  background: transparent;
+  color: #fff !important;
+  [class*="ant-input-password-icon"] {
+    color: #ababb1;
+    display: flex;
+    align-items: center;
+    margin-inline-start: 4px;
+  }
+  span {
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    height: 100%;
+    &[class*="ant-input-prefix"] {
+      margin-inline-end: 8px;
+    }
+    &[class*="ant-input-suffix"] {
+      [class*="ant-input-clear-icon"] {
+        color: #ababb1;
+      }
+    }
+  }
+  &[class*="ant-input-affix-wrapper-focused"] {
+    color: #469175;
+    [class*="ant-input-password-icon"] {
+      color: #469175;
+    }
+    [class*="ant-input-suffix"] {
+      [class*="ant-input-clear-icon"] {
+        color: #469175;
+      }
+    }
+  }
+
+  &::placeholder {
+    font-family: "Graphik";
+    color: #ababb1;
+  }
+  input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    &::placeholder {
+      font-family: "Graphik";
+      color: #ababb1;
+    }
+  }
+}
+
+.custom {
+  background: transparent;
+  svg {
+    path {
+      fill: #e3f1ec;
+    }
+  }
+  &.label {
+    margin-bottom: 24px;
+  }
+  [class*="ant-form-item-label"] {
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+      color: #ababb1;
+      &::before {
+        position: absolute;
+        margin-inline-end: 0 !important;
+        right: 0px;
+        left: 75px;
+        bottom: 1em;
+        color: #ababb1 !important;
+        font-family: inherit !important;
+      }
+    }
+  }
+  [class*="ant-form-item-explain-error"] {
+    margin-top: 3px;
+  }
+}
+
+.inputOtp {
+  width: 100% !important;
+  height: 50px;
+  border: 1px solid #7b7b84;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.inputOtp:focus {
+  outline: none;
+  border: 1px solid #469175;
+  border-radius: 5px;
+}
+
+.inputOtp::placeholder {
+  color: #7b7b84;
+}
+
+.inputOtpContainer {
+  justify-content: center;
+  gap: 10px;
+}

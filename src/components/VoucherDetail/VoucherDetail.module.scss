@@ -1,0 +1,215 @@
+.wrapper {
+  .titleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    .addProductBtn {
+      width: fit-content;
+    }
+  }
+  .inputSearch {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .productPanel {
+    margin-top: 32px;
+    position: relative;
+    .customTab {
+      width: 128px;
+    }
+    .tabContent {
+      margin-top: 12px;
+    }
+
+    .paginationWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12px;
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .productName {
+    margin-left: 8px;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  div {
+    cursor: pointer;
+    margin: 0 10px;
+
+    &.edit {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.delete {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.titleModalChooseStore {
+  font-size: 18px !important;
+}
+
+.textAvailable {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.buttonText {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #ababb1 !important;
+  }
+}
+
+.buttonGreen {
+  background: #12b76a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 36px;
+  border: none;
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+.bottomModal {
+  height: 30px;
+}
+
+.active {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #12b76a;
+}
+.inactive {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f25a5a;
+}
+
+.draft {
+  color: #12b76a !important;
+  border-color: #12b76a !important;
+  background-color: transparent;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #12b76a;
+    border-color: #12b76a;
+    background-color: transparent;
+  }
+}
+.save {
+  color: #fff;
+  background: #12b76a;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+  &:disabled {
+    color: #fff;
+    background: #2e443a;
+  }
+}
+
+.action {
+  margin-top: 30px;
+  text-align: center;
+}
+.edit {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  &:hover {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: #c3c3c3;
+    }
+  }
+}

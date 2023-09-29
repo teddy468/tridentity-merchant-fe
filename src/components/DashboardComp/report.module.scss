@@ -1,0 +1,97 @@
+.wrapper {
+  .chart {
+    margin-top: 32px;
+    background: #212124;
+    border-radius: 16px;
+    padding: 24px;
+    .textAndTabs {
+      display: flex;
+      justify-content: space-between;
+      max-height: 45px;
+      margin-bottom: 32px;
+      .title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        margin-bottom: 38px;
+      }
+    }
+  }
+  .orderList {
+    margin-top: 38px;
+  }
+
+  .piechart {
+    margin-top: 32px;
+    background: #212124;
+    border-radius: 16px;
+    padding: 24px;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: #ffffff;
+      margin-bottom: 38px;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.colorIcon {
+  color: #ababb1;
+}
+
+.buttonToday {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+}
+
+.nextAndPrev {
+  margin-left: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  display: flex;
+}
+
+.reconciliationInfor {
+  margin-top: 25px;
+
+  text-align: -webkit-right;
+
+  .cover {
+    width: 50%;
+    height: 92px;
+    border-bottom: 1px solid #4e4e54;
+    display: flex;
+
+    .bgDark {
+      background: #38383c;
+    }
+
+    .item {
+      width: 20%;
+      height: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: white;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        background: #38383c;
+        margin: 0 auto;
+        justify-content: center;
+      }
+    }
+  }
+}

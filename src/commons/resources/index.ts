@@ -1,0 +1,47 @@
+// svg import trên đây, nếu ảnh nhiều màu và lớn thì down luôn ảnh PNG
+export { ReactComponent as HeaderLogo } from "./icons/header-logo.svg";
+export { ReactComponent as TrifoodLogo } from "./icons/logo-trifood.svg";
+export { ReactComponent as LogoFull } from "./icons/logo-full.svg";
+export { ReactComponent as UserOctagonIcon } from "./icons/user-octagon.svg";
+export { ReactComponent as LockOutlineIcon } from "./icons/lock.svg";
+export { ReactComponent as MobileIcon } from "./icons/mobile.svg";
+export { ReactComponent as SmsIcon } from "./icons/sms.svg";
+export { ReactComponent as DocumentUploadIcon } from "./icons/document-upload.svg";
+export { ReactComponent as BriefCaseIcon } from "./icons/briefcase.svg";
+export { ReactComponent as StarIcon } from "./icons/star.svg";
+export { ReactComponent as FilledStarIcon } from "./icons/filled-star.svg";
+export { ReactComponent as EditIcon } from "./icons/edit.svg";
+export { ReactComponent as CloneIcon } from "./icons/clone.svg";
+export { ReactComponent as TrashIcon } from "./icons/trash.svg";
+export { ReactComponent as EyeBoldIcon } from "./icons/eye-bold.svg";
+export { ReactComponent as EyeBoldSlashIcon } from "./icons/eye-bold-slash.svg";
+export { ReactComponent as SearchNormalIcon } from "./icons/search-normal.svg";
+export { ReactComponent as GalleryAddIcon } from "./icons/gallery-add.svg";
+export { ReactComponent as ArrowRight } from "./icons/arrow-right.svg";
+export { ReactComponent as Notification } from "./icons/notification.svg";
+export { ReactComponent as ArrowDownIcon } from "./icons/arrow-down.svg";
+export { ReactComponent as VideoAddIcon } from "./icons/video-add.svg";
+export { ReactComponent as ArrowUpIcon } from "./icons/arrow-up.svg";
+export { ReactComponent as GradientPlusIcon } from "./icons/plus.svg";
+export { ReactComponent as KeyboardIcon } from "./icons/keyboard.svg";
+export { ReactComponent as ShoppingCartIcon } from "./icons/shopping-cart.svg";
+export { ReactComponent as OutlinedStarIcon } from "./icons/outlined-star.svg";
+export { ReactComponent as FacebookIcon } from "./icons/facebook.svg";
+export { ReactComponent as InstagramIcon } from "./icons/instagram.svg";
+export { ReactComponent as TwitterIcon } from "./icons/twitter.svg";
+export { ReactComponent as LinkedlnIcon } from "./icons/linkedln.svg";
+export { ReactComponent as AddCircleIcon } from "./icons/add-circle.svg";
+export { ReactComponent as MinusCircleIcon } from "./icons/minus-circle.svg";
+export { ReactComponent as NoteIcon } from "./icons/note.svg";
+export { ReactComponent as DocumentTextIcon } from "./icons/document-text.svg";
+export { ReactComponent as MoneyReceiveIcon } from "./icons/money-receive.svg";
+export { ReactComponent as SendIcon } from "./icons/send.svg";
+export { ReactComponent as GalleryIcon } from "./icons/gallery.svg";
+export { ReactComponent as Inventory } from "./icons/inventory.svg";
+export { ReactComponent as EmailIconForgot } from "./icons/email-forgot.svg";
+export { ReactComponent as PreviewIcon } from "./icons/preview-icon.svg";
+export { ReactComponent as RemoveIcon } from "./icons/remove-icon.svg";
+
+//png import như dưới đây
+export { default as NoAvatar } from "./images/no-avatar.png";
+export { default as Store } from "./images/store.png";

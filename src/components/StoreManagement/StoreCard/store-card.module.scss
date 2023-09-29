@@ -1,0 +1,84 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  // overflow: hidden;
+  background: #1d3b30;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 189px;
+    object-fit: cover;
+  }
+  .name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 16px 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .statusBox {
+    padding: 0px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dotIconWrapper {
+      .dotIcon {
+        transform: scale(0.5);
+        width: 35px;
+        height: 7px;
+      }
+    }
+  }
+
+  .btnAction {
+    background: black;
+    z-index: 999;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    border: 1px solid #ababb1;
+    border-radius: 10px;
+
+    p {
+      color: #fff;
+      text-align: center;
+      margin: 0px 0px;
+      padding: 5px 0px;
+    }
+    p:first-child {
+      border-bottom: 1px solid #ababb1;
+    }
+  }
+  .btnActionMember {
+    background: black;
+    z-index: 999;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    border: 1px solid #ababb1;
+    border-radius: 10px;
+
+    p {
+      color: #fff;
+      text-align: center;
+      margin: 0px 0px;
+      padding: 5px 0px;
+    }
+  }
+
+  .active {
+    color: #15aa2c;
+  }
+
+  .suspend {
+    color: #ff0000;
+  }
+}

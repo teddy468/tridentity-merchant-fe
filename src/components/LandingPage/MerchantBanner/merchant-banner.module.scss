@@ -1,0 +1,28 @@
+
+
+.eachSlideEffect {
+  height: 340px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sliderLandingPage {
+  position: relative;
+
+  .coverImage {
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    bottom: -30px;
+    left: 120px;
+    border-radius: 10px;
+    background-size: cover;
+  }
+}
+
+

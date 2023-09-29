@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 300;
+  src: url(./commons/resources/fonts/Graphik-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./commons/resources/fonts/Graphik-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  src: url(./commons/resources/fonts/Graphik-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  src: url(./commons/resources/fonts/Graphik-Semibold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  src: url(./commons/resources/fonts/Graphik-Bold.otf) format("opentype");
+}
+body {
+  margin: 0;
+  font-family: "Graphik";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.tabProduct {
+  width: 700px !important;
+}
+/* Custom Rate component antd color */
+.ant-rate-star-zero div .anticon.anticon-star {
+  color: #69696b;
+}

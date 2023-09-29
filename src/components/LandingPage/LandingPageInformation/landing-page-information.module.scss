@@ -1,0 +1,83 @@
+.landingPageInfo {
+  margin-top: 70px;
+
+  .landingPageInfoTitle {
+    display: flex;
+    margin-bottom: 30px;
+
+    .storeName {
+      flex: 1;
+
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+        margin-bottom: 12px;
+      }
+    }
+
+    .textReview {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #54ac8b;
+      margin-left: 32px;
+    }
+
+    .favoriteButton {
+      width: 65px;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(324deg, rgba(11, 11, 11, 0.8) 38.44%, rgba(22, 26, 24, 0.8) 85.8%);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      border: 1px solid rgba(249, 242, 166, 0.4);
+      margin-left: 32px;
+      cursor: pointer;
+    }
+
+    .favoriteButtonActive {
+      width: 65px;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(324deg, rgba(11, 11, 11, 0.8) 38.44%, rgba(22, 26, 24, 0.8) 85.8%);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      border: 1px solid rgba(249, 242, 166, 0.4);
+      margin-left: 32px;
+      cursor: pointer;
+
+      svg {
+        transform: scale(1.5);
+
+        path {
+          fill: #f4e85b;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ababb1;
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .mb40px {
+    margin-bottom: 40px;
+  }
+}

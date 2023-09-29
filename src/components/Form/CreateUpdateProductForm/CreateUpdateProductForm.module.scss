@@ -1,0 +1,54 @@
+.cancel {
+  color: #ababb1;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #f25a5a !important;
+  }
+}
+.preview {
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #f7ef82;
+  }
+}
+
+.draft {
+  color: #12b76a;
+  border-color: #12b76a;
+  background-color: transparent;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.save {
+  color: #fff;
+  background: #12b76a;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.draft,
+.save {
+  &:disabled {
+    color: #ababb1;
+  }
+}
+
+.addAttribute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,382 @@
+.wrapper {
+  position: relative;
+  .loading {
+    position: fixed;
+    top: 0;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+    }
+    .addProductBtn {
+      width: fit-content;
+    }
+  }
+  .inputSearch {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .productPanel {
+    position: relative;
+    .customTab {
+      width: 128px;
+    }
+    .tabContent {
+      margin-top: 12px;
+    }
+
+    .paginationWrapper {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+  }
+
+  .downButton {
+    color: white;
+    background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+
+    border: 1px solid #ababb1;
+    border-radius: 24px;
+    height: 44px;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 200px;
+
+    &:hover {
+      border: 1px solid #ababb1;
+      color: white;
+    }
+
+    .ant-btn-default {
+      background: transparent !important;
+    }
+  }
+
+  .uploadBtnWrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+
+    .btn {
+      background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+      padding: 12px 24px;
+      border: 1px solid #12b76a;
+      border-radius: 24px;
+      color: #12b76a;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    input[type="file"] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .productName {
+    margin-left: 8px;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  div {
+    cursor: pointer;
+    margin: 0 10px;
+
+    &.edit {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.delete {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+    &.soldOut {
+      font-size: 13px;
+      padding: 5px;
+      border-radius: 8px;
+      border: 1px solid #ababb1;
+    }
+    &.soldOut.true {
+      border-color: #f25a5a;
+      color: #f25a5a;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+  .adminNote {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .adminNote.noDot {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.titleModalChooseStore {
+  font-size: 18px !important;
+}
+
+.textAvailable {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.buttonText {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #ababb1 !important;
+  }
+}
+
+.buttonGreen {
+  background: #12b76a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #ffffff !important;
+  }
+  &.loading {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.bottomModal {
+  height: 30px;
+}
+.groupButton {
+  float: right;
+}
+
+.uploadWrapper {
+  margin-top: 40px;
+
+  .uploadTitle {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ababb1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .errorMessage {
+    //position: absolute;
+    top: 100%;
+    width: 100%;
+    color: red;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .inputArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 10px;
+    color: gray;
+    height: 72px;
+    width: 100%;
+    border: 1px dashed gray;
+    border-radius: 8px;
+    position: relative;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    input[type="file"] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  justify-content: center;
+  .cancelButton {
+    width: 184px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f7ef82;
+    height: 44px;
+    cursor: pointer;
+  }
+  .confirmButton {
+    width: 184px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    cursor: pointer;
+  }
+  .btnDisable {
+    opacity: 0.5;
+  }
+}
+
+.footerExport {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.save {
+  color: #fff;
+  background: #12b76a;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cancel {
+  margin-right: 20px;
+  border-color: #fdcd9d;
+  background-color: transparent;
+  padding: 8px 16px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
+.saveDisable {
+  opacity: 0.5;
+  color: white !important;
+}
+
+//[class*="ant-dropdown"] {
+//  background: transparent;
+//  [class*="ant-dropdown-menu"] {
+//    background: black;
+//    border: 1px solid #ABABB1;
+//    border-radius: 10px;
+//
+//    [class*="ant-dropdown-menu"] {
+//      color: white;
+//      border: 0;
+//    }
+//
+//    [class*="ant-dropdown-menu-item"] {
+//      border-top: 1px solid #ABABB1;
+//    }
+//  }
+//}

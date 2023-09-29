@@ -1,0 +1,16 @@
+.box {
+  background: #212124;
+  border-radius: 16px;
+  color: #ababb1;
+  padding: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+}

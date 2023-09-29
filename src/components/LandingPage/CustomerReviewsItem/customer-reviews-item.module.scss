@@ -1,0 +1,56 @@
+.coverCustomerReviewsItem {
+  background: linear-gradient(324deg, rgba(11, 11, 11, 0.8) 38.44%, rgba(22, 26, 24, 0.8) 85.8%);
+  border: 1px solid #64646C;
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+
+  .customerReviewsItemHeader {
+    display: flex;
+    margin-bottom: 24px;
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+      margin-right: 18px;
+      border-radius: 50%;
+      border: 1px solid #D9D9D9;
+    }
+
+    .customerInformation {
+      flex: 1;
+
+      h5 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+      }
+
+      .customerRate {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #ABABB1;
+        margin: 10px 0 0;
+      }
+    }
+  }
+
+  .description{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+
+  .imgReview{
+    border-radius: 16px;
+    height: 80px;
+    background-size: cover;
+  }
+}

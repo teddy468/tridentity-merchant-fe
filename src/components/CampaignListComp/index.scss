@@ -1,0 +1,24 @@
+.ant-picker {
+  border: 1px solid #ABABB1;
+  background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+  width: 100%;
+  height: 44px;
+  input {
+    color: #ffffff !important;
+  }
+  span {
+    color: #ffffff;
+  }
+}
+.ant-picker-input {
+  input {
+    color: white;
+  }
+  .ant-picker-clear {
+    background: none;
+  }
+}
+
+#create-campaign {
+    margin-top: 20px;
+}

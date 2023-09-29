@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .attribute {
+    .label {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ababb1;
+      .required {
+        color: #ff0000;
+      }
+    }
+    .variants {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+      .variant {
+        border: 1px solid #ababb1;
+        background: transparent;
+        border-radius: 18px;
+        padding: 0 20px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #ffffff;
+        cursor: pointer;
+
+        &.active {
+          background: linear-gradient(94.22deg, #f7ef82 0%, #fdcd9d 100%);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #0b0b0c;
+          .price {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

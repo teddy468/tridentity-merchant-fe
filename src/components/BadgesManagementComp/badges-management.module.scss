@@ -1,0 +1,157 @@
+.wrapper {
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+    }
+    .addProductBtn {
+      width: fit-content;
+    }
+  }
+  .inputSearch {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .productPanel {
+    position: relative;
+    margin-top: 42px;
+    .customTab {
+      width: 128px;
+    }
+    .tabContent {
+      margin-top: 12px;
+    }
+
+    .paginationWrapper {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .productName {
+    margin-left: 8px;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  div {
+    cursor: pointer;
+    margin: 0 10px;
+
+    &.edit {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.delete {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.titleModalChooseStore {
+  font-size: 18px !important;
+}
+
+.textAvailable {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.buttonText {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #ababb1 !important;
+  }
+}
+
+.buttonGreen {
+  background: #12b76a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 36px;
+  border: none;
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+.bottomModal {
+  height: 30px;
+}
+.groupButton {
+  float: right;
+}
+
+.stores {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+}

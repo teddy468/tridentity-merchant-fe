@@ -1,0 +1,52 @@
+.uploadFile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+
+  > div {
+    border: none !important;
+  }
+  [class*="ant-upload-list ant-upload-list-text"] {
+    max-width: 100%;
+    padding: 0px 10px;
+  }
+  [class*="ant-upload-list-item-container"]:last-child {
+    margin-bottom: 15px;
+  }
+  [class*="ant-upload-list-item-name"] {
+    color: #fff;
+  }
+  [class*="anticon"] {
+    color: #ababb1 !important;
+  }
+  [class*="ant-upload-drag-container"] {
+    color: #ababb1;
+    .description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-right: 8px;
+        path {
+          fill: #ababb1;
+        }
+      }
+    }
+    &:hover {
+      color: #fff;
+      .description {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    border-color: #2e473d;
+  }
+}

@@ -1,0 +1,118 @@
+.formWrapper {
+  // width: 588px;
+  background: linear-gradient(324deg, rgba(11, 11, 11, 0.8) 38.44%, rgba(22, 26, 24, 0.8) 85.8%);
+  padding: 1px;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid #fdcd9d;
+  margin: 120px 0;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fdcd9d 100%) #f7ef82 100%;
+  }
+}
+.platform {
+  text-align: center;
+  color: #ababb1;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.logoWrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+.inputWrapperStep2 {
+  flex-direction: row;
+  width: 900px;
+  gap: 0px;
+  .inputBox {
+    flex: 1;
+    color: #ffffff;
+  }
+  .inputBox:nth-child(1) {
+    padding-right: 25px;
+    border-right: 0.5px solid #ababb1;
+  }
+  .inputBox:nth-child(2) {
+    padding-left: 25px;
+  }
+}
+.btnBox {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    width: 150px;
+  }
+}
+
+.loginBtn {
+  margin-top: 36px;
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+.signUp {
+  text-align: center;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 48px;
+}
+.signUplink {
+  cursor: pointer;
+}
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .returnButton {
+    height: 44px;
+    width: 384px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid #f7ef82;
+  }
+}
+.welcome {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 40px 0 32px 0;
+}
+.uploadFile {
+  width: 100%;
+  [class*="ant-form-item-row"] {
+    width: 100%;
+  }
+}
+.bussinessCategory {
+  [class*="ant-select-selection-search"] {
+    padding-left: 0rem !important;
+    margin-left: 4px;
+  }
+}

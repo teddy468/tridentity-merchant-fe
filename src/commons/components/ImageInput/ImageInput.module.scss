@@ -1,0 +1,124 @@
+.group {
+  background: transparent;
+
+  [class*="ant-form-item-row"] {
+    [class*="ant-form-item-label"] {
+      text-align: left;
+      width: 160px;
+      label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ababb1;
+        &::after {
+          content: "";
+        }
+        .description {
+          position: absolute;
+          width: 160px;
+          white-space: pre-wrap;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  &.required {
+    label {
+      &::before {
+        content: "*";
+        position: absolute;
+        bottom: 0.75em;
+        right: 1px;
+        line-height: 1;
+        color: #ababb1 !important;
+      }
+    }
+  }
+}
+.upload {
+  [class*="ant-upload-list-picture-card"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &::before {
+      content: unset;
+    }
+  }
+  [class*="ant-upload-list-item"] {
+    width: 200px !important;
+    height: 128px !important;
+    background-color: #ababb1;
+    margin-block: 0 0px !important;
+    margin-inline: 0 0px !important;
+    border-radius: 16px !important;
+    padding: 0 !important;
+    border: none !important;
+    &::before {
+      display: none;
+    }
+    [class*="ant-upload-list-item-name"] {
+      display: none !important;
+    }
+
+    [class*="ant-upload-list-item-actions"] {
+      inset-inline-start: unset !important;
+      top: 6px !important;
+      right: 6px !important;
+      width: 40px !important;
+      height: 40px !important;
+      background-color: transparent;
+      background: linear-gradient(324deg, rgba(11, 11, 11, 0.8) 38.44%, rgba(22, 26, 24, 0.8) 85.8%);
+      backdrop-filter: blur(12px);
+      border-radius: 16px !important;
+      opacity: 1 !important;
+      overflow: hidden;
+
+      [class*="ant-upload-list-item-action"] {
+        background-color: transparent;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1 !important;
+      }
+    }
+  }
+  [class*="ant-upload-select"] {
+    background: transparent;
+    width: 200px !important;
+    height: 128px !important;
+    margin-block: 0 !important;
+    margin-inline: 0 !important;
+    margin-bottom: 0px !important;
+    color: #4e4e54;
+    border: 1px dashed #4e4e54 !important;
+    border-radius: 16px !important;
+    padding: 32px;
+    cursor: pointer;
+    &:hover {
+      border-color: #469175;
+      color: #469175;
+    }
+  }
+}
+
+.square {
+  [class*="ant-upload-select"],
+  [class*="ant-upload-list-item"] {
+    width: 128px !important;
+  }
+}
+
+.error {
+  width: 75%;
+  padding-left: 25%;
+  margin-top: -20px;
+  margin-bottom: 32px;
+  [class*="ant-form-item-control-input"] {
+    display: none;
+  }
+}

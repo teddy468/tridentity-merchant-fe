@@ -1,0 +1,22 @@
+.customPhoneInput {
+  position: relative;
+  display: block;
+  margin-bottom: 8;
+}
+.customSelect {
+  margin-bottom: 0;
+  cursor: pointer;
+  height: inherit;
+  top: -5px;
+  [class*="ant-select-selector"] {
+    border: none !important;
+    border-right: 1px solid #ababa1 !important;
+  }
+  [class*="prefix-icon-wrapper"] {
+    width: fit-content;
+  }
+  [class="ant-select-selector"] {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+}

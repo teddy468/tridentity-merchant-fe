@@ -1,0 +1,25 @@
+.featuredDishes {
+  margin: 70px 0 33px;
+  display: flex;
+  align-items: center;
+
+  .viewAll {
+    margin-right: 15px;
+    margin-left: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    background: linear-gradient(94.22deg, #FDCD9D 0%, #F7EF82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+}

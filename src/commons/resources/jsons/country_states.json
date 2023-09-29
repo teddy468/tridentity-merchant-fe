@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Singapore",
+    "iso3": "SGP",
+    "iso2": "SG",
+    "numeric_code": "702",
+    "phone_code": "65",
+    "capital": "Singapur",
+    "currency": "SGD",
+    "currency_name": "Singapore dollar",
+    "currency_symbol": "$",
+    "tld": ".sg",
+    "native": "Singapore",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "timezones": [
+      {
+        "zoneName": "Asia/Singapore",
+        "gmtOffset": 28800,
+        "gmtOffsetName": "UTC+08:00",
+        "abbreviation": "SGT",
+        "tzName": "Singapore Time"
+      }
+    ],
+    "translations": {
+      "kr": "싱가포르",
+      "pt-BR": "Singapura",
+      "pt": "Singapura",
+      "nl": "Singapore",
+      "hr": "Singapur",
+      "fa": "سنگاپور",
+      "de": "Singapur",
+      "es": "Singapur",
+      "fr": "Singapour",
+      "ja": "シンガポール",
+      "it": "Singapore",
+      "cn": "新加坡",
+      "tr": "Singapur"
+    },
+    "latitude": "1.36666666",
+    "longitude": "103.80000000",
+    "emoji": "🇸🇬",
+    "emojiU": "U+1F1F8 U+1F1EC",
+    "states": [
+      {
+        "id": 4651,
+        "name": "Central Singapore Community Development Council",
+        "state_code": "01",
+        "latitude": "1.28951400",
+        "longitude": "103.81438790",
+        "type": null
+      },
+      {
+        "id": 4649,
+        "name": "North East Community Development Council",
+        "state_code": "02",
+        "latitude": "45.01181130",
+        "longitude": "-93.24681070",
+        "type": null
+      },
+      {
+        "id": 4653,
+        "name": "North West Community Development Council",
+        "state_code": "03",
+        "latitude": "39.10709300",
+        "longitude": "-94.45733600",
+        "type": null
+      },
+      {
+        "id": 4650,
+        "name": "South East Community Development Council",
+        "state_code": "04",
+        "latitude": "39.28630700",
+        "longitude": "-76.56912370",
+        "type": null
+      },
+      {
+        "id": 4652,
+        "name": "South West Community Development Council",
+        "state_code": "05",
+        "latitude": "39.92569100",
+        "longitude": "-75.23105800",
+        "type": null
+      }
+    ]
+  }
+]

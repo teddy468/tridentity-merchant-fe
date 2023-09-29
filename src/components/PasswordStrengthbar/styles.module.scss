@@ -1,0 +1,40 @@
+.strengthBarBox {
+  position: absolute;
+  bottom: 30%;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  width: 40%;
+  left: 0;
+
+  .strengthBar {
+    border-radius: 4px;
+    width: 100%;
+    height: 4px;
+    background-color: #7b7b84;
+
+    .child {
+      border-radius: 4px;
+      height: 4px;
+      transition: all 0.5s ease-in-out;
+      width: 0%;
+      display: block;
+    }
+    .active {
+      width: 100%;
+    }
+    .red {
+      transition: all 0.5s ease-in-out;
+      background-color: red;
+    }
+    .yellow {
+      background-color: #f7ef82;
+    }
+    .green {
+      background-color: #00ff00;
+    }
+    .default {
+      background-color: #7b7b84;
+    }
+  }
+}

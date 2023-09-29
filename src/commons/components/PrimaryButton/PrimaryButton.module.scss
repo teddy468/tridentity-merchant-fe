@@ -1,0 +1,17 @@
+.primaryButton {
+  background: linear-gradient(94.22deg, #fdcd9d 0%, #f7ef82 100%);
+  border-radius: 24px;
+  padding: 12px 24px;
+  height: 44px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0b0b0c;
+  border: none;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+    background: grey;
+  }
+}

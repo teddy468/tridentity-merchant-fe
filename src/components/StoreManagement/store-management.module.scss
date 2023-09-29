@@ -1,0 +1,68 @@
+.wrapper {
+  .emptyList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    .image {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+    .description {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+    .createStoreBtn {
+      width: 131px;
+    }
+  }
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+    }
+    .createStoreBtn {
+      width: fit-content;
+    }
+  }
+  .stores {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+  .paginationWrapper {
+    text-align: center;
+  }
+}
+
+.storeContainer {
+  min-height: 100vh;
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    [class*="ant-spin-dot-item"] {
+      background-color: #fff;
+    }
+  }
+}

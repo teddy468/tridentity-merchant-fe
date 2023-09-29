@@ -1,0 +1,136 @@
+.previewProduct {
+  width: 100% !important;
+  color: #ffffff;
+  [class*="ant-modal-content"] {
+    background: transparent;
+    width: 100%;
+  }
+  [class*="anticon-close"] {
+    color: #ffffff;
+    padding: 4px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+  }
+  .navigationBar {
+    background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+    height: 84px;
+    padding: 20px 40px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    .search {
+      flex: 1;
+      margin-bottom: 0;
+      svg {
+        path {
+          fill: transparent;
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ffffff;
+      .menuItem {
+        padding: 12px 16px;
+        height: 44px;
+      }
+      .icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      img {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+    }
+  }
+  .content {
+    padding: 30px 0;
+    background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+    padding: 64px 112px;
+    gap: 44px;
+
+    .categories {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .socials {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 32px;
+        .socialNetworks {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0px;
+          gap: 24px;
+          height: 24px;
+        }
+      }
+      .items {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 52px;
+        row-gap: 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #f3f3f4;
+      }
+      .contact {
+        .title {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #f3f3f4;
+        }
+        .form {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          margin-top: 16px;
+
+          .email {
+            margin-bottom: 0;
+          }
+          .submitButton {
+            width: 96px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .retangle {
+      width: 100%;
+      border: 1px solid #38383c;
+    }
+    .copyright {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #7b7b84;
+      text-align: center;
+    }
+  }
+}

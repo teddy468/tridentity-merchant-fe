@@ -1,0 +1,16 @@
+.customTabs {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    background: #38383c;
+    border-radius: 24px;
+    padding: 4px;
+    height: 44px;
+    width: fit-content;
+    .tabs {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

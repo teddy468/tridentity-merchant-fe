@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  .buttonWrapper {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+    &.disabled {
+      cursor: no-drop;
+      svg {
+        path {
+          fill: #ababb1;
+        }
+      }
+    }
+  }
+  input {
+    background: transparent;
+    border: none;
+    width: 100px;
+    padding: 0 18px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus {
+      outline: none;
+    }
+  }
+}

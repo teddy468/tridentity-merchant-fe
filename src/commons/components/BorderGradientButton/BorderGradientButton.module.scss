@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 24px;
+  height: 44px;
+  width: max-content;
+  font-size: 14;
+  line-height: 20px;
+  text-transform: none;
+  font-weight: 500;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  background-color: black;
+  border-radius: 24px;
+  margin-bottom: 48px;
+  &:disabled {
+    background-color: gray;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: -1px;
+    background: linear-gradient(to right bottom, #fdcd9d, #f7ef82);
+    border-radius: inherit;
+  }
+  div {
+    background: linear-gradient(94.22deg, #fdcd9d 0%, #f7ef82 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &:hover {
+    background-color: black;
+    &:before {
+      background: #f4e85b;
+    }
+    div {
+      background: none;
+      -webkit-text-fill-color: #f4e85b;
+    }
+    svg {
+      path {
+        fill: #f4e85b;
+      }
+    }
+  }
+}

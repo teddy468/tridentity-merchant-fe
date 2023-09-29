@@ -1,0 +1,89 @@
+.box {
+  background: #0b0b0c;
+  border-radius: 20px;
+  color: #ababb1;
+  padding: 24px;
+  margin-bottom: 24px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .title {
+      margin-bottom: 0px;
+      width: 50%;
+    }
+    .checkboxWrapper {
+      flex-direction: column;
+      [class*="ant-form-item-row"] {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      [class*="ant-form-item-label"] {
+        margin-bottom: 8px;
+        > label {
+          color: #ababb1;
+        }
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .delete,
+  .collaspe {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+  }
+  .delete {
+    &:hover {
+      color: #f25a5a;
+    }
+  }
+  .collaspe {
+    &:hover {
+      color: #f7ef82;
+    }
+  }
+  .content {
+    display: none;
+    z-index: 1;
+    &.open {
+      display: block;
+      margin-top: 29px;
+    }
+  }
+  .contentTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .variationsHeader {
+    background: #38383c;
+    border-radius: 8px 8px 0px 0px;
+    padding: 16px 0px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .variations {
+    .input,
+    input {
+      border-color: #fff;
+    }
+  }
+  .add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}

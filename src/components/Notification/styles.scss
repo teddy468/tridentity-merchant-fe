@@ -1,0 +1,24 @@
+#scrollableDiv {
+  .name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ababb1;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}

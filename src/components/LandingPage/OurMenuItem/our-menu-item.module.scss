@@ -1,0 +1,32 @@
+.coverOurMenuItem {
+  background-size: cover;
+  border-radius: 16px;
+  position: relative;
+  height: 250px;
+  margin-bottom: 24px;
+
+  .coverTitle {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 24px 32px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    h4 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #DBDBDE;
+      margin-bottom: 0;
+    }
+  }
+}

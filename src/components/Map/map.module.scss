@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+.comboboxList {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.comboboxOption {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 15px;
+
+  &:hover {
+    background-color: rgba(60, 64, 67, 0.04);
+  }
+}
+
+.label {
+  padding: 11px;
+}
+
+.address {
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px #2e473d solid;
+  }
+}

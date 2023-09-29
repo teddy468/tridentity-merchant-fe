@@ -1,0 +1,21 @@
+.box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  &.fill {
+    path {
+      fill: currentColor;
+    }
+  }
+  &.stroke {
+    path {
+      stroke: currentColor;
+    }
+  }
+}
+
+.noDrop {
+  cursor: no-drop;
+}

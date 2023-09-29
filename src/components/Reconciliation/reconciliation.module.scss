@@ -1,0 +1,367 @@
+.wrapper {
+  position: relative;
+  .loading {
+    position: fixed;
+    top: 0;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    [class*="ant-picker"] {
+      background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+      input {
+        color: #ffffff;
+      }
+      span {
+        color: #ffffff;
+      }
+    }
+    [class*="ant-picker-input"] {
+      input {
+        &::placeholder {
+          color: white;
+        }
+      }
+      [class*="ant-picker-clear"] {
+        background: black !important;
+        [class*="anticon-close-circle"] {
+          color: white !important;
+        }
+      }
+    }
+
+    .datePicker {
+      justify-content: center;
+      margin-right: 50px;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+    }
+
+    .btnDisable {
+      opacity: 0.5;
+    }
+
+    .addProductBtnDisable {
+      width: fit-content;
+      margin-left: 10px;
+      background-color: #cccccc !important;
+    }
+  }
+
+  .addProductBtn {
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .statusWrapper {
+    display: flex;
+    align-items: center;
+    .status {
+      margin-right: 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ababb1;
+    }
+
+    .loyaltyPointWrapper {
+      display: flex;
+      margin-left: auto;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: right;
+      color: #ffffff;
+
+      .green {
+        color: #12b76a;
+      }
+    }
+  }
+
+  .productPanel {
+    position: relative;
+    .customTab {
+      width: 128px;
+    }
+    .tabContent {
+      margin-top: 12px;
+    }
+
+    .paginationWrapper {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+  }
+
+  .downButton {
+    color: white;
+    background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+
+    border: 1px solid #ababb1;
+    border-radius: 24px;
+    padding: 12px 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .uploadBtnWrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+
+    .btn {
+      background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+      padding: 12px 24px;
+      border: 1px solid #12b76a;
+      border-radius: 24px;
+      color: #12b76a;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    input[type="file"] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .filterReconciliation {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 8px;
+
+    .left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0 10px 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ababb1;
+      }
+    }
+  }
+
+  .paginationWrapper {
+    margin: 40px 0;
+  }
+
+  .reconciliationInfor {
+    margin-top: 25px;
+
+    text-align: -webkit-right;
+
+    .cover {
+      width: 50%;
+      height: 92px;
+      border-bottom: 1px solid #4e4e54;
+      display: flex;
+
+      .bgDark {
+        background: #38383c;
+      }
+
+      .item {
+        width: 20%;
+        height: 100%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+          background: #38383c;
+          margin: 0 auto;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .productName {
+    margin-left: 8px;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  div {
+    cursor: pointer;
+    margin: 0 10px;
+
+    &.edit {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.delete {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.titleModalChooseStore {
+  font-size: 18px !important;
+}
+
+.textAvailable {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.buttonText {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #ababb1 !important;
+  }
+}
+
+.buttonGreen {
+  background: #12b76a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #ffffff !important;
+  }
+  &.loading {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.bottomModal {
+  height: 30px;
+}
+.groupButton {
+  float: right;
+}
+
+.requestedStatus {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2e90fa;
+}
+
+.createdStatus {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.processingStatus {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f79009;
+}
+
+.paidStatus {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #12b76a;
+}

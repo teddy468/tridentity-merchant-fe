@@ -1,0 +1,14 @@
+.checkbox {
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+.wrapper {
+  .titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .addProductBtn {
+      width: fit-content;
+    }
+  }
+  .inputSearch {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .productPanel {
+    margin-top: 80px;
+    .wrapper {
+      position: relative;
+      .information {
+        position: absolute;
+        top: 74px;
+        left: 24px;
+        width: 100%;
+        height: 100%;
+        .name {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          color: #ffffff;
+          margin-bottom: 16px;
+        }
+        .membership {
+          font-size: 14px;
+          line-height: 20px;
+          color: #ffffff;
+        }
+        .id {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          color: #ffffff;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .card {
+      width: 408px;
+      height: 272px;
+    }
+  }
+}
+.checkbox {
+  cursor: pointer;
+  .outlineIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #ababb1;
+      }
+    }
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .productName {
+    margin-left: 8px;
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  div {
+    cursor: pointer;
+    margin: 0 10px;
+
+    &.edit {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.delete {
+      &:hover {
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            stroke: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.titleModalChooseStore {
+  font-size: 18px !important;
+}
+
+.textAvailable {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.buttonText {
+  color: #ababb1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  &:hover {
+    color: #ababb1 !important;
+  }
+}
+
+.buttonGreen {
+  background: #12b76a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 36px;
+  border: none;
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+.bottomModal {
+  height: 30px;
+}
+.groupButton {
+  float: right;
+}
+
+.stores {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+.membershipPerk {
+  background: #212124;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 40px;
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  .description {
+    .head {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    .list {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+  }
+}
+
+.collection {
+  background: #212124;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.modalTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal {
+  .body {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .requestId {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+.logoWrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}

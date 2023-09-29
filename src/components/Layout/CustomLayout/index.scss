@@ -1,0 +1,45 @@
+.dropdownNoti {
+  background: linear-gradient(324deg, #0b0b0b 38.44%, #161a18 85.8%);
+  border-radius: 8px;
+  width: 389px;
+  height: 400px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  color: #fff;
+  .item {
+    border-bottom: 1px solid #38383c;
+    padding-bottom: 16px;
+    padding: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    .date {
+      color: #ababb1;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  .record {
+    flex-direction: column;
+  }
+}
+
+.header_noti {
+  cursor: pointer;
+}
+
+.viewAll {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4e85b;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+}
